@@ -48,6 +48,12 @@ const disableBttn = () => {
     }
 }
 
+const enableBttn = () => {
+    for(box of boxes){
+        box.disabled = false;
+        box.innerText = "";
+    }
+}
 function playerWon() {
     for (space of winPattern) {
         let [a, b, c] = space
@@ -64,5 +70,6 @@ function resetGame() {
     boxes.forEach(box => box.innerHTML = '' )
     currentPlayer = X_pattern
     mssgContainer.classList.add('hide')
+    enableBttn()
 }
 startGame()
