@@ -63,5 +63,6 @@ function resetGame() {
     spaces.fill(null)
     boxes.forEach(box => box.innerHTML = '' )
     currentPlayer = X_pattern
+    mssgContainer.classList.add('hide')
 }
 startGame()
