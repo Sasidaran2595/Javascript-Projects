@@ -60,12 +60,13 @@ h1 {
 
 #mssg {
     color: beige;
-    font-size: 5vmin;
+    font-size: 8vmin
 }
 
 .mssg-container{
     padding: 1rem;
-    height: 3vmax;    
+    height: 3vmax; 
+    font-size: 3rem   
 }
 
 .hide {
